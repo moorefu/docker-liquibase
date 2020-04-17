@@ -14,6 +14,12 @@ if [ -z "${DB_DRIVER_CLASSPATH}" ]; then
     com.mysql.cj.jdbc.Driver)
         DB_DRIVER_CLASSPATH="/usr/share/java/mysql-connector-java.jar"
     ;;
+    org.postgresql.Driver)
+        DB_DRIVER_CLASSPATH="/usr/share/java/postgresql.jar"
+    ;;
+    org.mariadb.jdbc.Driver)
+        DB_DRIVER_CLASSPATH="/usr/share/java/mariadb-java-client.jar"
+    ;;
     esac
 fi
 if [ -n "${DB_DRIVER_CLASSPATH}" ]; then
