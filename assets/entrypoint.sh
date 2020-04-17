@@ -9,10 +9,10 @@ fi
 if [ -z "${DB_DRIVER_CLASSPATH}" ]; then
     case $DB_DRIVER in
     oracle.jdbc.OracleDriver)
-        DB_DRIVER_CLASSPATH="/assets/driver/ojdbc6-11.2.0.4.jar"
+        DB_DRIVER_CLASSPATH="/usr/share/java/ojdbc6-11.2.0.4.jar"
     ;;
     com.mysql.cj.jdbc.Driver)
-        DB_DRIVER_CLASSPATH="/assets/driver/mysql-connector-java-8.0.17.jar"
+        DB_DRIVER_CLASSPATH="/usr/share/java/mysql-connector-java.jar"
     ;;
     esac
 fi
