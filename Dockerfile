@@ -7,8 +7,8 @@ RUN apt-get update \
   && apt-get install -yq --no-install-recommends \
       libmariadb-java \
       libpostgresql-jdbc-java \
-  && curl https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/8.0.19/mysql-connector-java-8.0.19.jar -O /usr/share/java/mysql-connector-java.jar \
-  && curl https://repo.maven.apache.org/maven2/com/oracle/database/jdbc/ojdbc6/11.2.0.4/ojdbc6-11.2.0.4.jar -O /usr/share/java/ojdbc6-11.2.0.4.jar \
+  && curl https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/8.0.19/mysql-connector-java-8.0.19.jar -o /usr/share/java/mysql-connector-java.jar \
+  && curl https://repo.maven.apache.org/maven2/com/oracle/database/jdbc/ojdbc6/11.2.0.4/ojdbc6-11.2.0.4.jar -o /usr/share/java/ojdbc6-11.2.0.4.jar \
   && apt-get autoclean \
   && apt-get clean \
   && rm -rf /var/*/apt/*
