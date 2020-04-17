@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+      http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd">
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="sysdate" dbms="oracle"/>
+    <property name="data_tablespace" value=""/>
+    <property name="index_tablespace" value=""/>
+    <property name="data_tablespace" value="TABLESPACE ${DB_DATA_TABLESPACE}" dbms="oracle"/>
+    <property name="index_tablespace" value="TABLESPACE ${DB_INDEX_TABLESPACE}" dbms="oracle"/>
+</databaseChangeLog>
