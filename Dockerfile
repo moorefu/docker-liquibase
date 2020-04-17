@@ -10,6 +10,7 @@ RUN apt-get update \
   && apt-get autoclean \
   && apt-get clean \
   && rm -rf /var/*/apt/*
+# /usr/share/java/mysql-connector-java.jar
 # /usr/share/java/mariadb-java-client.jar
 # /usr/share/java/postgresql.jar
 
